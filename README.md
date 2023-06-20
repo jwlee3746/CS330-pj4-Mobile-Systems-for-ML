@@ -1,10 +1,12 @@
 # CS330-pj4-Mobile-Systems-for-ML
 
-# MediaPipe Tasks Object Detection Android Demo
+# MediaPipe Tasks Object Detection + Audio Calssification Hybrid Android
 
 ### Overview
 
-This is a camera app that continuously detects the objects (bounding boxes, classes, and confidence) in the frames seen by your device's back camera, in an image imported from the device gallery,  or in a video imported by the device gallery, with the option to use a quantized [MobileNetV2](https://storage.cloud.google.com/tf_model_garden/vision/qat/mobilenetv2_ssd_coco/mobilenetv2_ssd_256_uint8.tflite) [EfficientDet Lite 0](https://storage.googleapis.com/mediapipe-tasks/object_detector/efficientdet_lite0_uint8.tflite), or [EfficientDet Lite2](https://storage.googleapis.com/mediapipe-tasks/object_detector/efficientdet_lite2_uint8.tflite) model.
+This is a camera app that continuously both detects the objects (bounding boxes, classes, and confidence) in the frames seen by your device's back camera and classify the audio event of knocking snapping and tapping.
+
+The option to use a quantized [EfficientDet Lite2](https://tfhub.dev/tensorflow/efficientdet/lite2/detection/1) model and [yamNet](https://tfhub.dev/google/yamnet/1) model.
 
 The model files are downloaded by a Gradle script when you build and run the app. You don't need to do any steps to download TFLite models into the project explicitly unless you wish to use your own models. If you do use your own models, place them into the app's *assets* directory.
 
